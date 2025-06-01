@@ -1,15 +1,15 @@
+:root {
+    --vh: 100vh;
+    --vw: 100vw;
+}
 .heads {
     display: flex;
     align-content: center;
     width: auto;
-    height: calc(var(--vh, 1vh) * 15);
+    height: calc(var(--vh)*0.15);
     background-color: #007de3;
     border-radius: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.Space{
-    width: 1000px;
+    margin-bottom: 5px;
 }
 .heads h1{
     padding: 25px;
@@ -22,27 +22,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.heads .links h4 {
     margin: 10px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.sidebox{
-    display: block;
+
+.sidebox {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
     background-color: rgb(134, 134, 134);
     border-radius: 20px;
-    padding-top: 50px;
-    width: 300px;
-    height: 500px;
+    width: calc(var(--vw)*0.22);
+    height: calc(var(--vh) - 20px);
+    padding: 0;
 }
-.sidebox .navlinks{
+
+.sidebox .navlinks {
     text-align: center;
     font-size: x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
     color: aliceblue;
-}
-.sidebox a{
     text-decoration: none;
+}
+
+.sidebox a {
+    text-decoration: none;;
 }
