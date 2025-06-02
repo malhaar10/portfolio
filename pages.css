@@ -2,6 +2,14 @@
     --vh: 100vh;
     --vw: 100vw;
 }
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 .heads {
     display: flex;
     align-content: center;
@@ -12,23 +20,17 @@
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    margin-bottom: -20px;  /* Added negative margin to create overlap */
+    margin-bottom: -20px;
     position: relative;
     z-index: 2;
 }
-.heads h1{
+
+.heads h1 {
     padding: 25px;
     text-align: center;
-    align-self:center;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:xx-large;
-}
-.heads .links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-self: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
 }
 
 .sidebox {
@@ -38,30 +40,31 @@
     background-color: rgb(134, 134, 134);
     border-radius: 20px;
     width: calc(var(--vw)*0.22);
-    height: calc(var(--vh) - calc(var(--vh)*0.15) - 40px); /* Adjusted for header height and margins */
+    height: calc(var(--vh) - calc(var(--vh)*0.15) - 40px);
     padding: 0;
     position: relative;
-    margin-top: 20px;
+    margin: 20px 10px 10px 10px; /* Top Right Bottom Left */
     z-index: 1;
 }
 
 .sidebox .navlinks {
     text-align: center;
     font-size: x-large;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 20px;
     color: aliceblue;
     text-decoration: none;
 }
 
 .sidebox a {
-    text-decoration: none;;
+    text-decoration: none;
 }
 
 .container {
     display: flex;
     gap: 20px;
     padding: 10px;
+    padding-right: 30px; /* Added right padding */
     height: calc(var(--vh) - calc(var(--vh)*0.15) - 25px);
     position: relative;
     z-index: 1;
@@ -71,41 +74,17 @@
     flex: 1;
     padding: 20px;
     border-radius: 20px;
-    margin-top: 150px; /* Added to move content below profile photo */
     position: relative;
     z-index: 1;
 }
 
 .main_content textarea {
     width: 100%;
-    height: calc(100% - 150px); /* Adjusted height to account for top margin */
+    height: 100%;
     border: none;
     background: transparent;
     padding: 15px;
     resize: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
-}
-body {
-    position: relative;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-.profile-photo {
-    position: absolute;
-    top: 20px;
-    right: 30px;  /* Changed from left to right */
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    z-index: 3;
-    border: 4px solid #000000;
-}
-
-.profile-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
