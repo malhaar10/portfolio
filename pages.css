@@ -63,7 +63,7 @@ body {
 .container {
     display: flex;
     gap: 20px;
-    padding: 10px;
+    padding-top: 5px;
     padding-right: 30px; /* Added right padding */
     height: calc(var(--vh) - calc(var(--vh)*0.15) - 25px);
     position: relative;
