@@ -41,9 +41,8 @@ body {
     border-radius: 20px;
     width: calc(var(--vw)*0.22);
     height: calc(var(--vh) - calc(var(--vh)*0.15) - 40px);
-    padding: 0;
     position: relative;
-    margin: 10px 10px 10px 10px; /* Top Right Bottom Left */
+    margin: 0px 10px 10px 10px; /* Top Right Bottom Left */
     z-index: 1;
 }
 
