@@ -5,8 +5,8 @@ function toggleBar() {
 }
 
 window.onload = function () {
-  const text = "Bottom Bar Typing Animation Demo";
-  const typingElement = document.getElementById("typingText");
+  const text = "Malhaar Jachak";
+  const typingElement = document.getElementById("typingText"); // fixed typo match
   let index = 0;
 
   function type() {
@@ -19,4 +19,3 @@ window.onload = function () {
 
   type();
 };
-

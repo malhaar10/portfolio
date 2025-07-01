@@ -1,24 +1,25 @@
 body {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    background-color: black;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: black;
 }
 
 .content {
-    padding: 20px;
-    padding-bottom: 80px;
+  padding: 20px;
+  padding-bottom: 80px;
 }
 
 #typingText {
   color: white;
-  font-size: 2rem;
+  font-size: 4rem;
   font-family: monospace;
   white-space: nowrap;
   overflow: hidden;
-  padding: 20px;
+  margin: 10vh 10vw;
+  align-items:center;
 }
 #typingText::after {
   content: "|";
@@ -31,12 +32,11 @@ body {
   }
 }
 
-
 .floating-bottom-bar {
   position: fixed;
   bottom: 1.5vh;
   left: 65px;
-  height: 15vh;    
+  height: 15vh;
   width: 100vw;
   background-color: #1c1c1c;
   color: white;
@@ -57,24 +57,6 @@ body {
   border-radius: 50%;
   justify-content: center;
   align-items: center;
-}
-
-.circle-button {
-  width: 15vh;
-  height: 15vh;
-  background-color: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  cursor: pointer;
-  transition: transform 0.4s ease;
-}
-
-.floating-bottom-bar.collapsed .circle-button .arrow {
-  transform: rotate(180deg);
-  transition: transform 0.4s ease;
 }
 
 .bar-links {
