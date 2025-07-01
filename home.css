@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.content {
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+#typingText {
+  color: white;
+  font-size: 2rem;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 20px;
+}
+#typingText::after {
+  content: "|";
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+.floating-bottom-bar {
+  position: fixed;
+  bottom: 1.5vh;
+  left: 65px;
+  height: 15vh;    
+  width: 100vw;
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 15vh;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.4s ease, border-radius 0.4s ease;
+}
+.floating-bottom-bar.expanded {
+  width: 90vw;
+}
+.floating-bottom-bar.collapsed {
+  height: 15vh;
+  width: 15vh;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-button {
+  width: 15vh;
+  height: 15vh;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.floating-bottom-bar.collapsed .circle-button .arrow {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+}
+
+.bar-links {
+  display: flex;
+  gap: 10vw;
+  padding: 0 17vw;
+  flex-grow: 1;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.floating-bottom-bar.collapsed .bar-links {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.arrow {
+  flex-shrink: 0;
+  width: 15vh;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6vh;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.floating-bottom-bar.collapsed .arrow {
+  transform: rotate(180deg);
+  transform-origin: center center;
+}
