@@ -148,9 +148,14 @@ body {
   font-family: monospace;
 }
 .cont-cards{
-  display: flex;
-  padding: 2vh 10vw 10vh 17vw;
+  padding: 0 10vw 10vh 17vw;
   margin: auto;
   font-size: x-large;
   font-family: monospace;
+}
+.cont-cards .socials{
+  display: flex;
+    justify-content: center;
+  align-items: center;
+  text-align: center;
 }
