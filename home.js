@@ -5,7 +5,7 @@ function toggleBar() {
 }
 
 window.onload = function () {
-  const text = "Malhaar Jachak";
+  const text = "Typing text";
   const typingElement = document.getElementById("typingText"); // fixed typo match
   let index = 0;
 
