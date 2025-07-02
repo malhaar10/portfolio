@@ -1,8 +1,17 @@
 function toggleBar() {
-  const bar = document.getElementById('bottomBar');
+  const bar = document.getElementById('sideBar');
+  const arrow = document.getElementById('arrow');
+
   bar.classList.toggle('collapsed');
   bar.classList.toggle('expanded');
+
+  if (bar.classList.contains('collapsed')) {
+    arrow.innerHTML = '&gt;'; // ">"
+  } else {
+    arrow.innerHTML = '&lt;'; // "<"
+  }
 }
+
 
 window.onload = function () {
   const text = "Typing text";
