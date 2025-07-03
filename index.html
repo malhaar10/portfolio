@@ -9,16 +9,6 @@
 </head>
 
 <body>
-  <div class="floating-side-bar expanded" id="sideBar" onclick="toggleBar()">
-    <div class="arrow" id="arrow">&harr;</div>
-    <div class="bar-links">
-      <p>About</p>
-      <p><a href="#project">Projects</a></p>
-      <p><a href="#skills">Skills</a></p>
-      <p><a href="#contact">Contact</a></p>
-    </div>
-  </div>
-
   <p id="typingText"></p>
   <p class="about">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam consectetur hic aperiam cum quod
     inventore neque distinctio quidem veritatis, sint, nesciunt commodi vero animi voluptas, quasi error cupiditate.
@@ -26,6 +16,11 @@
     autem consequuntur est ipsa dicta esse, voluptatibus optio aspernatur. Esse illum doloremque possimus quia
     obcaecati, aliquam perspiciatis. Quas, incidunt necessitatibus sequi obcaecati repellendus sapiente impedit alias
     voluptate corrupti culpa dolor at totam sint tenetur, expedita voluptas?</p>
+  <div class="sections">
+    <p><a href="#projects">Projects</a></p>
+    <p><a href="#skills">Skills</a></p>
+    <p><a href="#contact">Contact</a></p>
+  </div>
   <div class="heading" id="project">
     <p>Projects</p>
   </div>
@@ -53,9 +48,18 @@
       <p>Contact</p>
     </div>
     <div class="cont-cards">
-      <p class="social">Github</p>
-      <p class="social">LinkedIn</p>
-      <p class="social">Email</p>
+      <a class="contact-item" href="https://github.com/yourusername" target="_blank">
+        <img src="github.png" alt="GitHub" class="contact-icon" />
+        Github
+      </a>
+      <a class="contact-item" href="https://www.linkedin.com/in/yourusername/" target="_blank">
+        <img src="lkd.webp" alt="LinkedIn" class="contact-icon" />
+        LinkedIn
+      </a>
+      <a class="contact-item" href="mailto:youremail@example.com">
+        <img src="mail.jpg" alt="Email" class="contact-icon" />
+        Email
+      </a>
     </div>
   </div>
   <script src="home.js"></script>
