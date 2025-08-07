@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url('rho.avif');
     background-size: cover;
@@ -7,65 +11,209 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .certifications-container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 2vh 5vw;
+    gap: clamp(20px, 4vw, 30px);
+    padding: 2vh 2vw;
     margin-top: 2vh;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 
 .certification-card {
     background-color: #000000;
     border-radius: 15px;
-    padding: 25px;
+    padding: clamp(15px, 3vw, 25px);
     color: white;
     font-family: monospace;
     margin: 0 auto;
-    width: 70vw;
-    max-width: 800px;
-    min-width: 300px;
+    width: 100%;
+    max-width: calc(100vw - 4vw);
+    min-width: 250px;
     min-height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .certification-name {
-    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
     font-weight: bold;
     margin-bottom: 8px;
     color: #00bfff;
+    text-align: center;
 }
 
 .certification-provider {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 3vw, 1.2rem);
     color: #ffaa00;
     margin-bottom: 10px;
     font-style: italic;
+    text-align: center;
 }
 
 .navigation {
     background-color: rgba(27, 27, 27, 0.62);
     border-radius: 20px;
-    padding: 20px;
+    padding: clamp(15px, 3vw, 20px);
     margin: 2vh auto;
-    display: flex;
-    justify-content: center;
-    gap: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: clamp(1rem, 2vw, 1.5rem);
     width: fit-content;
+    max-width: calc(100vw - 4vw);
+    overflow: hidden;
+    justify-items: center;
+    align-items: center;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
     font-family: monospace;
-    font-size: 1.2rem;
-    padding: 10px 15px;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    padding: clamp(8px, 2vw, 15px) clamp(10px, 2.5vw, 15px);
     border-radius: 10px;
     transition: background-color 0.3s;
+    text-align: center;
+    min-width: fit-content;
 }
 
 .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Devices (up to 768px) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 4vw;
+        overflow-x: hidden;
+    }
+
+    .certifications-container {
+        padding: 1vh 0;
+        gap: 20px;
+        margin: 0 auto;
+        max-width: calc(100vw - 8vw);
+    }
+
+    .certification-card {
+        padding: 15px;
+        width: 100%;
+        max-width: calc(100vw - 8vw);
+        min-width: 250px;
+        margin: 0 auto;
+    }
+
+    .certification-name {
+        font-size: clamp(1.1rem, 6vw, 1.4rem);
+        margin-bottom: 6px;
+        word-break: break-word;
+    }
+
+    .certification-provider {
+        font-size: clamp(0.9rem, 5vw, 1.05rem);
+        margin-bottom: 8px;
+        word-break: break-word;
+    }
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        padding: 20px;
+        width: 100%;
+        max-width: calc(100vw - 8vw);
+        margin: 2vh auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 15px 10px;
+        font-size: 0.9rem;
+        width: 100%;
+        max-width: 150px;
+        box-sizing: border-box;
+        word-break: break-word;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+
+/* Extra small mobile devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 4vw;
+        overflow-x: hidden;
+    }
+
+    .navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0.8rem;
+        padding: 15px;
+        width: 100%;
+        max-width: calc(100vw - 8vw);
+        margin: 2vh auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 12px 8px;
+        font-size: 0.8rem;
+        width: 100%;
+        max-width: 120px;
+        box-sizing: border-box;
+        word-break: break-word;
+        text-align: center;
+        border-radius: 6px;
+    }
+}
+
+/* Tablet Devices (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .certifications-container {
+        padding: 2vh 4vw;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .certification-card {
+        padding: 20px;
+        width: 85vw;
+        max-width: 750px;
+    }
+
+    .navigation {
+        gap: 1.5rem;
+        max-width: 80vw;
+        justify-items: center;
+        align-items: center;
+    }
+}
+
+/* Large Desktop (1025px and up) */
+@media screen and (min-width: 1025px) {
+    .certifications-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 2vh 5vw;
+    }
+
+    .certification-card {
+        max-width: 800px;
+    }
+
+    .navigation {
+        max-width: 700px;
+    }
 }
