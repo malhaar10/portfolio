@@ -4,50 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>malhaar10</title>
-    <link rel="stylesheet" href="pages.css">
+    <title>malhaar10 - Projects</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="projects.css">
 </head>
 
 <body>
-    <div>
-        <header class="heads">
-            <h1>Projects</h1>
-        </header>
+    <div class="heading">
+        <p>Projects</p>
     </div>
-    <div>
-        <div class="container">
-            <div class="sidebox">
-                <div class="navlinks">
-                    <h3><a href="index.html">Home</a></h3>
-                    <h3><a href="skills.html">Skills</a></h3>
-                    <h3><a href="certifications.html">Certifications</a></h3>
-                    <h3><a href="education.html">Education</a></h3>
-                </div>
+    
+    <div class="navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="certifications.html" class="nav-link">Certifications</a>
+        <a href="education.html" class="nav-link">Education</a>
+    </div>
+    
+    <div class="project-container">
+        <div class="project-card">
+            <div class="project-title">Weather Application</div>
+            <div class="project-tech">Flutter, Dart, Firebase, OpenWeather API, WAQI API</div>
+            <div class="project-description">
+                A comprehensive weather application featuring user authentication with Firebase Auth and SharedPreferences for session management. Provides real-time weather data, 5-day forecasts, and Air Quality Index (AQI) display using OpenWeather and WAQI APIs. Includes dynamic weather animations and city management functionality allowing users to search, add, remove, and switch between favorite cities with local storage.
             </div>
-            <div class=" main_content"><h4>
-                <h3><p style="font-family: 'Montserrat', sans-serif;">Weather Application | Flutter, Dart, Firebase</p></h3>
-                <p style="font-family: 'Montserrat', sans-serif;">User authentication: sign up, login, logout using Firebase Auth and SharedPreferences for session management.
-                Weather and air quality: real-time weather, 5-day forecast, AQI display using OpenWeather API, WAQI
-                API, and weather_animation for dynamic visuals.
-                City management: search, add, remove, and switch between favorite cities; locations saved locally.
-                Tools: Flutter, Firebase Auth, SharedPreferences, OpenWeather API, WAQI API, Geolocator,
-                weatheranimation, dotenv, http, intl.</p></h4>
-                <hr>
-                <h3><p style="font-family: 'Montserrat', sans-serif;">College Companion App | Link Flutter, Dart</p></h3>
-                <p style="font-family: 'Montserrat', sans-serif;">Campus navigation: interactive map with location selection and walking directions using device GPS and Google Maps integration.
-                Event calendar: view and select campus events using an interactive calendar interface.
-                Utilities access: quick links to campus services like salon, stationary, general store, and direct Play Store
-                launch for certain utilities; restaurant menus with photo viewing.
-                Mess menu: view daily menus for campus dining options with easy tab navigation</p></h4>
-                <hr>
-                <h3><p style="font-family: 'Montserrat', sans-serif;">Flight Delay Prediction | Python, TensorFlow, Scikit-Learn, Pandas</p></h3>
-                <p style="font-family: 'Montserrat', sans-serif;">Flight delay prediction: predicts if a fight will be delayed based on features like carrier, origin,
-                destination, departure delay, and scheduled departure time.
-                Data preprocessing: reads fight data, encodes categorical variables, normalizes numerical features, and
-                creates a binary target for delay.
-                Visualization: generates a correlation heatmap using matplotlib and seaborn.
-                Model training: builds and evaluates both a Random Forest classifer (using scikit-learn) and a neural
-                network (using TensorFlow/Keras) for binary classifcation</p></h4>
+            <div class="project-images">
+                <!-- Add small project images here -->
+                <div class="image-placeholder">Image 1</div>
+                <div class="image-placeholder">Image 2</div>
+                <div class="image-placeholder">Image 3</div>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-title">College Companion App</div>
+            <div class="project-tech">Flutter, Dart, Google Maps API, GPS Integration</div>
+            <div class="project-description">
+                An interactive campus companion app featuring GPS-enabled navigation with walking directions via Google Maps integration. Includes an event calendar with interactive interface for campus events, quick access to campus utilities like salon, stationary, and dining services. Features restaurant menus with photo viewing and mess menu display with easy tab navigation for daily dining options.
+            </div>
+            <div class="project-images">
+                <div class="image-placeholder">Image 1</div>
+                <div class="image-placeholder">Image 2</div>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-title">Flight Delay Prediction</div>
+            <div class="project-tech">Python, TensorFlow, Scikit-Learn, Pandas, Matplotlib, Seaborn</div>
+            <div class="project-description">
+                A machine learning project that predicts flight delays based on multiple features including carrier, origin, destination, departure delay, and scheduled departure time. Implements comprehensive data preprocessing with categorical encoding and numerical feature normalization. Features correlation heatmap visualization and comparative model evaluation using both Random Forest classifier and neural network approaches for binary classification.
+            </div>
+            <div class="project-images">
+                <div class="image-placeholder">Chart 1</div>
+                <div class="image-placeholder">Chart 2</div>
             </div>
         </div>
     </div>

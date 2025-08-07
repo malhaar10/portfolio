@@ -2,7 +2,7 @@ body {
   margin: 0 0 0 0;
   min-height: 100vh;
   /* allow scrolling */
-  background-image: url('rho.jpg');
+  background-image: url('rho.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -39,7 +39,7 @@ body {
 
 .about {
   color: white;
-  padding: 2vh 10vw 2vh 12vw;
+  padding: 2vh 10vw 8vh 12vw;
   display: flex;
   font-size: xx-large;
   font-family: monospace;
@@ -50,8 +50,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 3vw;
-  margin: 5vh auto;
-  padding: 2vh 5vw;
+  margin: 8vh auto 15vh auto;
+  padding: 2.5vh 4vw;
   width: fit-content;
   border-radius: 20px;
   font-size: xx-large;
@@ -70,10 +70,11 @@ body {
 
 .heading {
   display: flex;
-  padding: 2vh 10vw 0 12vw;
-  font-size: 4rem;
+  padding: 1vh 5vw 0 5vw;
+  font-size: 3rem;
   color: white;
   font-family: monospace;
+  justify-content: center;
 }
 
 .projects {
@@ -113,16 +114,20 @@ body {
 }
 .cont-back{
   background-color: rgba(27, 27, 27, 0.62);
-  margin: 1vh 0.5vw 0 0.5vw;
+  margin: 5vh 10vw 8vh 12vw;
   border-radius: 20px;
+  padding: 15px 15px 15px 15px;
+  width: auto;
+  max-width: none;
 }
 .cont-cards {
   display: flex;
-  gap: 15vw;
-  padding: 0 10vw 10vh 17vw;
+  gap: 8vw;
+  padding: 0 0 1vh 0;
   margin: auto;
-  font-size: x-large;
+  font-size: large;
   font-family: monospace;
+  justify-content: center;
 }
 
 .contact-item {
