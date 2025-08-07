@@ -21,7 +21,7 @@ body {
     width: auto;
     height: clamp(80px, calc(var(--vh)*0.15), 120px);
     background-color: #007de3;
-    border-radius: 20px;
+    border-radius: 25px;
     margin: 10px;
     margin-bottom: 5px;
     position: relative;
@@ -43,7 +43,7 @@ body {
     justify-content: center; 
     align-items: center;     
     background-color: rgb(134, 134, 134);
-    border-radius: 20px;
+    border-radius: 25px;
     width: clamp(200px, calc(var(--vw)*0.22), 300px);
     height: calc(var(--vh) - clamp(80px, calc(var(--vh)*0.15), 120px) - 40px);
     position: relative;
@@ -82,7 +82,7 @@ body {
 .main_content {
     flex: 1;
     padding: clamp(10px, 3vw, 20px);
-    border-radius: 20px;
+    border-radius: 25px;
     position: relative;
     z-index: 1;
     min-width: 0;
@@ -112,7 +112,7 @@ body {
     .heads {
         height: clamp(60px, 12vh, 80px);
         margin: 5px auto;
-        border-radius: 15px;
+        border-radius: 25px;
         max-width: calc(100vw - 8vw);
     }
 

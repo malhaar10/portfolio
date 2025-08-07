@@ -26,7 +26,7 @@ body {
 
 .certification-card {
     background-color: #000000;
-    border-radius: 15px;
+    border-radius: 25px;
     padding: clamp(15px, 3vw, 25px);
     color: white;
     font-family: monospace;
@@ -58,7 +58,7 @@ body {
 
 .navigation {
     background-color: rgba(27, 27, 27, 0.62);
-    border-radius: 20px;
+    border-radius: 25px;
     padding: clamp(15px, 3vw, 20px);
     margin: 2vh auto;
     display: grid;

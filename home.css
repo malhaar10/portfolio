@@ -66,7 +66,7 @@ body {
   padding: 3vh 3vw;
   width: fit-content;
   max-width: calc(100vw - 12vw);
-  border-radius: 20px;
+  border-radius: 25px;
   font-size: clamp(1.2rem, 3vw, 1.6rem);
   color: white;
   font-family: monospace;
@@ -105,7 +105,7 @@ body {
 
 .cards {
   font-size: clamp(1rem, 2vw, 1.25rem);
-  border-radius: 20px;
+  border-radius: 25px;
   margin: 1rem;
   height: clamp(200px, 40vh, 300px);
   width: 100%;
@@ -142,7 +142,7 @@ body {
 .cont-back{
   background-color: rgba(27, 27, 27, 0.62);
   margin: 5vh auto 8vh auto;
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 15px;
   width: auto;
   max-width: calc(100vw - 24vw);
@@ -166,11 +166,15 @@ body {
 
 .contact-item {
   display: flex;
-  align-items: center; /* Vertically align icon + text */
-  gap: 10px;           /* Space between icon and text */
-  color: white;        /* Text color */
-  text-decoration: none; /* Remove underline */
-  transition: transform 0.2s, opacity 0.2s; /* Optional: add hover animation */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .contact-item:hover {
@@ -250,9 +254,12 @@ body {
 
   .contact-item {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 1rem;
     font-size: clamp(1rem, 3vw, 1.4rem);
-    gap: 10px;
+    gap: 8px;
+    text-align: center;
   }
 
   .contact-icon {
@@ -330,10 +337,13 @@ body {
 
   .contact-item {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 1rem;
     word-break: break-word;
     font-size: clamp(1.2rem, 5vw, 1.6rem);
-    gap: 12px;
+    gap: 8px;
+    text-align: center;
   }
 
   .contact-icon {
@@ -391,9 +401,13 @@ body {
   }
 
   .contact-item {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: clamp(1rem, 4vw, 1.2rem);
-    gap: 10px;
+    gap: 8px;
     padding: 0.5rem;
+    text-align: center;
   }
 
   .contact-icon {
@@ -486,9 +500,13 @@ body {
 
   .contact-item {
     justify-content: center;
-    padding: 0.8rem;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
     word-break: break-word;
     font-size: clamp(1rem, 4vw, 1.2rem);
+    gap: 8px;
+    text-align: center;
   }
 }
 
