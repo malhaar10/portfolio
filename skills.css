@@ -89,6 +89,49 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+/* Extra Small Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 2vw;
+        overflow-x: hidden;
+    }
+
+    .skills-container {
+        padding: 1vh 0;
+        gap: 15px;
+        max-width: calc(100vw - 4vw);
+    }
+
+    .skill-category {
+        padding: 12px;
+        max-width: calc(100vw - 4vw);
+        min-width: 200px;
+    }
+
+    .category-title {
+        font-size: clamp(1rem, 5vw, 1.2rem);
+        margin-bottom: 6px;
+    }
+
+    .skills-list {
+        font-size: clamp(0.8rem, 3.5vw, 0.9rem);
+        line-height: 1.4;
+    }
+
+    .navigation {
+        gap: 0.8rem;
+        padding: 15px;
+        max-width: calc(100vw - 4vw);
+    }
+
+    .nav-link {
+        padding: 12px 8px;
+        font-size: 0.8rem;
+        max-width: 100px;
+        border-radius: 6px;
+    }
+}
+
 /* Mobile Devices (up to 768px) */
 @media screen and (max-width: 768px) {
     body {
@@ -225,5 +268,46 @@ body {
 
     .skills-list {
         text-align: left;
+    }
+}
+
+/* Ultra-wide screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .skills-container {
+        max-width: 1200px;
+        padding: 3vh 6vw;
+        gap: 2.5rem;
+    }
+
+    .skill-category {
+        max-width: 1000px;
+        padding: 2rem;
+    }
+
+    .category-title {
+        font-size: clamp(1.6rem, 3vw, 2rem);
+        margin-bottom: 1rem;
+    }
+
+    .skills-list {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    .navigation {
+        max-width: 900px;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .nav-link {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        padding: clamp(12px, 2.5vw, 18px) clamp(15px, 3vw, 20px);
     }
 }

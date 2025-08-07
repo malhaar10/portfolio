@@ -14,7 +14,7 @@ function toggleBar() {
 
 
 window.onload = function () {
-  const text = "Typing text";
+  const text = "Malhaar Jachak";
   const typingElement = document.getElementById("typingText");
   let index = 0;
 

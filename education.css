@@ -244,3 +244,53 @@ body {
         max-width: 700px;
     }
 }
+
+/* Ultra-wide screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .education-container {
+        max-width: 1200px;
+        padding: 3vh 6vw;
+        gap: 2.5rem;
+    }
+
+    .education-card {
+        max-width: 1000px;
+        padding: 2.5rem;
+    }
+
+    .institution-name {
+        font-size: clamp(1.8rem, 3.5vw, 2.2rem);
+        margin-bottom: 1rem;
+    }
+
+    .location {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .degree {
+        font-size: clamp(1.3rem, 2.5vw, 1.6rem);
+        margin-bottom: 1rem;
+    }
+
+    .duration {
+        font-size: clamp(1rem, 2vw, 1.2rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .navigation {
+        max-width: 900px;
+        gap: 2.5rem;
+        padding: 2rem;
+    }
+
+    .nav-link {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        padding: clamp(12px, 2.5vw, 18px) clamp(15px, 3vw, 20px);
+    }
+}

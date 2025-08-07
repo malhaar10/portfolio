@@ -124,6 +124,54 @@ body {
     text-align: center;
 }
 
+/* Extra Small Mobile Devices (up to 480px) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0 2vw;
+        overflow-x: hidden;
+    }
+
+    .project-container {
+        padding: 1vh 0;
+        gap: 15px;
+        max-width: calc(100vw - 4vw);
+    }
+
+    .project-card {
+        padding: 12px;
+        max-width: calc(100vw - 4vw);
+        min-width: 200px;
+    }
+
+    .project-title {
+        font-size: clamp(1rem, 5vw, 1.2rem);
+        margin-bottom: 6px;
+    }
+
+    .project-tech {
+        font-size: clamp(0.75rem, 3.5vw, 0.85rem);
+        margin-bottom: 10px;
+    }
+
+    .project-description {
+        font-size: clamp(0.75rem, 3vw, 0.8rem);
+        line-height: 1.4;
+    }
+
+    .navigation {
+        gap: 0.8rem;
+        padding: 15px;
+        max-width: calc(100vw - 4vw);
+    }
+
+    .nav-link {
+        padding: 10px 6px;
+        font-size: 0.75rem;
+        max-width: 100px;
+        border-radius: 6px;
+    }
+}
+
 /* Mobile Devices (up to 768px) */
 @media screen and (max-width: 768px) {
     body {
@@ -264,5 +312,60 @@ body {
 
     .navigation {
         max-width: 800px;
+    }
+}
+
+/* Ultra-wide screens (1440px and up) */
+@media screen and (min-width: 1440px) {
+    body {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .project-container {
+        max-width: 1400px;
+        padding: 3vh 6vw;
+        gap: 3rem;
+    }
+
+    .project-card {
+        max-width: 1200px;
+        padding: 2.5rem;
+    }
+
+    .project-title {
+        font-size: clamp(1.8rem, 3vw, 2.2rem);
+        margin-bottom: 1rem;
+    }
+
+    .project-tech {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .project-description {
+        font-size: clamp(1rem, 1.8vw, 1.2rem);
+        line-height: 1.7;
+    }
+
+    .navigation {
+        max-width: 1000px;
+        gap: 2.5rem;
+        padding: 2rem;
+    }
+
+    .nav-link {
+        font-size: clamp(1.1rem, 2vw, 1.3rem);
+        padding: clamp(12px, 2.5vw, 18px) clamp(15px, 3vw, 20px);
+    }
+
+    .project-images {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+
+    .image-placeholder {
+        padding: 1.5rem;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
     }
 }
