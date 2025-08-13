@@ -7,7 +7,7 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   /* allow scrolling */
-  background-image: url('rho.avif');
+  background-image: url('assets/rho.avif');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
