@@ -9,38 +9,216 @@
 </head>
 
 <body>
-  <p id="typingText"></p>
-  <p class="about">
-    As a final-year IT student at Manipal Institute of Technology, Bengaluru, I possess a strong interest in software and Android application development, as well as full-stack development. Furthermore, I am also drawn to the fields of aviation and aerospace engineering.
-  </p>
-  
-  <div class="sections">
-    <p><a href="projects.html">Projects</a></p>
-    <p><a href="skills.html">Skills</a></p>
-    <p><a href="education.html">Education</a></p>
-    <p><a href="certifications.html">Certifications</a></p>
-  </div>
-  
-  <div class="cont-back">
-    <div class="heading" id="contact">
-      <p>Contact</p>
+  <div class="page">
+    <header class="hero card">
+      <div class="hero-top">
+        <div class="brand">
+          <span class="brand-mark">MJ</span>
+          <div class="brand-text">
+            <p class="brand-title">Malhaar Jachak</p>
+            <p class="brand-subtitle">Final-year IT student - MIT Bengaluru</p>
+          </div>
+        </div>
+      </div>
+      <p class="about">
+        As a final-year IT student at Manipal Institute of Technology, Bengaluru, I possess a strong interest in software and Android application development, as well as full-stack development. Furthermore, I am also drawn to the fields of aviation and aerospace engineering.
+      </p>
+    </header>
+
+    <section class="tab-shell card" aria-label="Portfolio sections">
+      <div class="tab-control" role="tablist" aria-label="Portfolio sections">
+        <button class="tab is-active" role="tab" aria-selected="true" aria-controls="panel-projects" id="tab-projects" data-tab="projects">Projects</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-skills" id="tab-skills" data-tab="skills">Skills</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-education" id="tab-education" data-tab="education">Education</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-certifications" id="tab-certifications" data-tab="certifications">Certifications</button>
+        <span class="tab-highlight" aria-hidden="true"></span>
+      </div>
+    </section>
+
+    <div class="panels">
+      <section class="panel is-active" role="tabpanel" aria-labelledby="tab-projects" id="panel-projects" data-panel="projects">
+        <div class="panel-header">
+          <h2>Projects</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card project-card">
+            <h3>Weather Application</h3>
+            <p class="card-meta">Flutter, Dart, Firebase, OpenWeather API, WAQI API</p>
+            <ul class="card-list">
+              <li>Built with Flutter (Dart) for cross-platform</li>
+              <li>Built with Flutter (Dart) for cross-platform mobile development</li>
+              <li>Uses Firebase for authentication</li>
+              <li>Fetches weather data from OpenWeatherMap and air quality from WAQI APIs</li>
+              <li>Detects user location or allows city search for weather info</li>
+              <li>Displays current weather, 5-day forecast, AQI, humidity, pressure, wind, clouds, sunrise/sunset</li>
+              <li>Features animated, modern Material Design UI with dynamic weather visuals and info cards</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>MotorNation Website</h3>
+            <p class="card-meta">HTML, CSS, Javascript, Express.js, Node.js, PostgreSQL</p>
+            <ul class="card-list">
+              <li>Uses HTML, CSS, and JavaScript for development</li>
+              <li>Serves as the website for MotorNation, focused on automotive themes</li>
+              <li>Provides navigation menus, multiple content sections, and interactive elements</li>
+              <li>Showcases vehicles, services, or automotive content with images and descriptions</li>
+              <li>Features responsive design for mobile and desktop viewing</li>
+              <li>Uses CSS for custom styling, layouts, and visual effects</li>
+              <li>Includes contact or feedback forms for user interaction</li>
+              <li>Implements clear structure and user-friendly navigation throughout the site</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>DailyHelper</h3>
+            <p class="card-meta">React-Native</p>
+            <ul class="card-list">
+              <li>Built entirely with JavaScript</li>
+              <li>All-in-one app aimed at managing various aspects of college life</li>
+              <li>Includes features such as scheduling, note-taking, task management, and organization tools</li>
+              <li>User interface is simple and functional, focused on accessibility and ease of use</li>
+              <li>Design prioritizes practical daily management and quick access to key functions for students</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>College Companion App</h3>
+            <p class="card-meta">Flutter, Dart, Google Maps API, GPS Integration</p>
+            <ul class="card-list">
+              <li>Uses Dart (Flutter) as the primary tech stack</li>
+              <li>Functions as a mobile app to assist with various aspects of college life</li>
+              <li>Offers features such as scheduling, reminders, notes, and organization tools</li>
+              <li>Provides a modern, responsive UI following Material Design principles</li>
+              <li>Focuses on ease of use and accessibility for students</li>
+            </ul>
+          </article>
+
+          <article class="card project-card">
+            <h3>Flight Delay Prediction</h3>
+            <p class="card-meta">Python, TensorFlow, Scikit-Learn, Pandas, Matplotlib, Seaborn</p>
+            <ul class="card-list">
+              <li>Uses Python with libraries such as pandas, scikit-learn, TensorFlow, seaborn, matplotlib, and joblib</li>
+              <li>Reads and preprocesses flight data, encoding categorical variables and scaling features</li>
+              <li>Visualizes feature correlations using heatmaps</li>
+              <li>Implements a Random Forest classifier and a neural network (with Keras/TensorFlow) to predict flight delays</li>
+              <li>Splits data for training and testing, evaluates accuracy, and saves trained models for reuse</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" role="tabpanel" aria-labelledby="tab-skills" id="panel-skills" data-panel="skills">
+        <div class="panel-header">
+          <h2>Skills</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card skill-card">
+            <h3>Programming Languages</h3>
+            <p class="skills-list">C, Java, Dart, Python, Javascript, HTML, CSS</p>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Libraries/Frameworks</h3>
+            <p class="skills-list">Flutter, Pandas, TensorFlow, Numpy, Scikit-Learn, Mlxtend, Matplotlib, React-Native</p>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Tools / Platforms</h3>
+            <p class="skills-list">VS Code, Android Studio, Git, Firebase, IntelliJ Idea, AutoCAD, PGAdmin</p>
+          </article>
+
+          <article class="card skill-card">
+            <h3>Databases</h3>
+            <p class="skills-list">SQLite, Oracle SQ, PostgreSQL</p>
+          </article>
+        </div>
+
+        <div class="calculator-card">
+          <div class="calc-display">
+            <p class="calc-label">Skill Snapshot</p>
+            <p class="calc-output mono" id="skillsOutput"></p>
+          </div>
+          <button class="cta-button" type="button" id="skillsToggle" aria-expanded="false" aria-controls="skillsResults">Show snapshot</button>
+          <div class="results-panel" id="skillsResults" hidden>
+            <div class="results-row">Categories: <span class="mono" id="skillsCategories"></span></div>
+            <div class="results-row">Total skills: <span class="mono" id="skillsTotal"></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" role="tabpanel" aria-labelledby="tab-education" id="panel-education" data-panel="education">
+        <div class="panel-header">
+          <h2>Education</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card education-card">
+            <h3>Manipal Institute of Technology</h3>
+            <p class="card-meta">Bengaluru</p>
+            <p class="card-emphasis">Bachelor of Technology - Information Technology</p>
+            <p class="card-detail mono">September 2022 - August 2026</p>
+          </article>
+
+          <article class="card education-card">
+            <h3>Taywade College</h3>
+            <p class="card-meta">Nagpur</p>
+            <p class="card-emphasis">Higher Secondary Education - PCM</p>
+            <p class="card-detail mono">July 2020 - May 2022</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" role="tabpanel" aria-labelledby="tab-certifications" id="panel-certifications" data-panel="certifications">
+        <div class="panel-header">
+          <h2>Certifications</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card certification-card">
+            <h3>Cloud Computing Fundamentals</h3>
+            <p class="card-meta">IBM Skills Build</p>
+          </article>
+
+          <article class="card certification-card">
+            <h3>Oracle SQL DBMS</h3>
+            <p class="card-meta">Coursera</p>
+          </article>
+
+          <article class="card certification-card">
+            <h3>Flight Mechanics</h3>
+            <p class="card-meta">Coursera</p>
+          </article>
+
+          <article class="card certification-card">
+            <h3>Data Fundamentals</h3>
+            <p class="card-meta">IBM Skillsbuild</p>
+          </article>
+
+          <article class="card certification-card">
+            <h3>Web Development</h3>
+            <p class="card-meta">IBM Skillsbuild</p>
+          </article>
+        </div>
+      </section>
     </div>
-    <div class="cont-cards">
-      <a class="contact-item" href="https://github.com/yourusername" target="_blank">
-        <img src="assets/github.avif" alt="GitHub" class="contact-icon">
-        Github
-      </a>
-      <a class="contact-item" href="https://www.linkedin.com/in/yourusername/" target="_blank">
-        <img src="assets/lkd.avif" alt="LinkedIn" class="contact-icon">
-        LinkedIn
-      </a>
-      <a class="contact-item" href="mailto:youremail@example.com">
-        <img src="assets/mail.avif" alt="Email" class="contact-icon">
-        Email
-      </a>
-    </div>
+
+    <section class="contact card" id="contact">
+      <div class="panel-header">
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <a class="contact-item" href="https://github.com/yourusername" target="_blank">
+          Github
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/yourusername/" target="_blank">
+          LinkedIn
+        </a>
+        <a class="contact-item" href="mailto:youremail@example.com">
+          Email
+        </a>
+      </div>
+    </section>
   </div>
-  
+
   <script src="home.js"></script>
 </body>
 
