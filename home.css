@@ -415,7 +415,7 @@ body {
   .contact-icon {
     height: clamp(30px, 6vw, 40px);
   }
-}
+
 
 /* Mobile Devices (up to 768px) */
 @media screen and (max-width: 768px) {
